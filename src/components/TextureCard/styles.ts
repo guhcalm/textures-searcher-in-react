@@ -66,5 +66,6 @@ export const Info = styled.section`
     height: 25px;
     cursor: pointer;
     user-select: none;
+    opacity: 0.3;
   }
 `

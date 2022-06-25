@@ -18,7 +18,7 @@ export default styled.div`
     position: relative;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 900;
 
     &::after {
@@ -29,6 +29,8 @@ export default styled.div`
       transform: translateX(-50%);
       font-size: 10px;
       font-weight: 100;
+      color: black;
+      opacity: 0.3;
     }
   }
 

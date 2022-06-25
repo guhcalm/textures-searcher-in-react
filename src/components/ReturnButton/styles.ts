@@ -5,7 +5,7 @@ export default styled.button`
   cursor: pointer;
   width: 40px;
   height: 40px;
-  border: 2px solid white;
+  border: 1.8px solid white;
   border-radius: 50%;
   position: absolute;
   top: 10px;
@@ -14,13 +14,8 @@ export default styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  &::after {
-    content: "";
-    display: block;
-    width: 8px;
-    height: 15px;
-    background-color: white;
-    clip-path: polygon(100% 0, 0 50%, 100% 100%, 4px 50%);
-    transform: translateX(-10%);
+
+  & > img {
+    height: 18px;
   }
 `

@@ -8,28 +8,22 @@ export default styled.main`
 
 export const Cover = styled.section`
   width: 100%;
-  height: 200px;
+  height: 150px;
   background-color: rgb(230, 195, 185);
 `
 
-export const Avatar = styled.section`
+export const Avatar = styled.img`
   z-index: 2;
   position: absolute;
   left: 50%;
-  top: calc(200px);
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  padding: 5px;
-  background-color: white;
+  border: 3px solid white;
+  background-color: rgb(230, 230, 230);
   height: 100px;
   width: 100px;
-  & > img {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(230, 230, 230);
-    border-radius: 50%;
-    object-fit: cover;
-  }
+  object-fit: cover;
+  overflow: hidden;
 `
 
 export const Info = styled.section`
@@ -41,16 +35,6 @@ export const Info = styled.section`
   width: 100%;
   background-color: white;
   position: relative;
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    width: calc(100% - 60px);
-    border-bottom: 1px solid rgb(230, 230, 230);
-  }
   & > button {
     cursor: pointer;
     user-select: none;
@@ -69,10 +53,10 @@ export const Info = styled.section`
   & > h1 {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-size: 15px;
+    font-size: 30px;
     position: relative;
     & > img {
-      height: 15px;
+      height: 25px;
       position: absolute;
       right: 0;
       top: 50%;
