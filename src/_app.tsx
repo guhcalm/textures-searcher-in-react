@@ -1,8 +1,9 @@
 import { Layout } from "./components"
-import { Error, Profile } from "./pages"
+import { Header, Navbar } from "./containers"
+import { Error, Profile, Search } from "./pages"
 
 export const MyApp = () => (
   <Layout>
-    <Profile />
+    <Search />
   </Layout>
 )

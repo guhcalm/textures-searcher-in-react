@@ -3,7 +3,7 @@ import styled from "styled-components"
 export default styled.li`
   list-style: none;
   min-width: 300px;
-  height: 400px;
+  height: calc(100vh - 100px);
   border: 1px solid rgba(230, 230, 230, 1);
   position: relative;
   border-radius: 10px;
